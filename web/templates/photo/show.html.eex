@@ -1,0 +1,33 @@
+<h2>Show photo</h2>
+
+<ul>
+
+  <li>
+    <strong>Filename:</strong>
+    <%= @photo.filename %>
+  </li>
+
+  <li>
+    <strong>Path:</strong>
+    <%= @photo.path %>
+  </li>
+
+  <li>
+    <strong>Caption:</strong>
+    <%= @photo.caption %>
+  </li>
+
+  <li>
+    <strong>Versions:</strong>
+    <%= @photo.versions %>
+  </li>
+
+  <li>
+    <strong>Album:</strong>
+    <%= @photo.album_id %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: photo_path(@conn, :edit, @photo) %>
+<%= link "Back", to: photo_path(@conn, :index) %>

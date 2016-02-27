@@ -18,6 +18,7 @@ defmodule Photos.Router do
 
     get "/", PageController, :index
     resources "/albums", AlbumController
+    resources "/photos", PhotoController
   end
 
   # Other scopes may use custom stacks.
