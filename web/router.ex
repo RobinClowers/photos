@@ -17,6 +17,7 @@ defmodule Photos.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/albums", AlbumController
   end
 
   # Other scopes may use custom stacks.

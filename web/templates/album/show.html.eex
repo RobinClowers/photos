@@ -1,0 +1,28 @@
+<h2>Show album</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @album.title %>
+  </li>
+
+  <li>
+    <strong>Slug:</strong>
+    <%= @album.slug %>
+  </li>
+
+  <li>
+    <strong>Cover photo:</strong>
+    <%= @album.cover_photo_id %>
+  </li>
+
+  <li>
+    <strong>Published at:</strong>
+    <%= @album.published_at %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: album_path(@conn, :edit, @album) %>
+<%= link "Back", to: album_path(@conn, :index) %>
